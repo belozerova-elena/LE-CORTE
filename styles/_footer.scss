@@ -1,0 +1,64 @@
+// FOOTER
+.footer {
+  padding: 50px 0;
+  background-color: $brown;
+  font-size: 14px;
+  &__nav {
+    height: 60px;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
+    padding: 0px 95px;
+  }
+  &__info {
+    height: 60px;
+    border-bottom: 1px solid $white;
+    padding: 0px 95px;
+  }
+  &__info-list {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 100%;
+  }
+  &__info-item {
+    padding: 0px 57px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid $white;
+  }
+  &__info-name {
+    padding-left: 0px;
+  }
+  &__info-copy {
+    padding-right: 0px;
+    border-right: none;
+  }
+}
+// MENU
+.menu {
+  height: 100%;
+  &__list {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link {
+    color: $white;
+    transition: 0.2s ease;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+// SOCIAL
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item:nth-child(2) {
+    margin: 0 40px;
+  }
+}
