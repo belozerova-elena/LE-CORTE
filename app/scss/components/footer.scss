@@ -1,0 +1,141 @@
+.footer {
+  padding: 50px 0;
+  font-size: 14px;
+  background-color: $color-brown;
+  &__nav {
+    height: 60px;
+    padding: 0 95px;
+    border-top: 1px solid $color-white;
+    border-bottom: 1px solid $color-white;
+  }
+  &__info {
+    height: 60px;
+    padding: 0 95px;
+    border-bottom: 1px solid $color-white;
+  }
+  &__info-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__info-list--item {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0px 57px;
+    border-right: 1px solid $color-white;  
+  }
+  &__info-list--name {
+    padding-left: 0px;
+  }
+  &__info-list--phone-link {
+    text-decoration: none;
+    color: $color-white;
+  }
+  &__info-list--copy {
+    padding-right: 0px;
+    border-right: none;
+  }
+}
+// MEDIA MAX-WIDTH:1100px
+@media (max-width: 1100px) {
+  .footer {
+    &__info-list {
+      justify-content: space-between;
+    }
+    &__info-list--item {
+      padding: 0px;
+      border: none;  
+    }
+  }
+  
+}
+// MEDIA MAX-WIDTH:900px
+@media (max-width: 900px) {
+  .footer {
+    &__nav {
+      height: auto;
+      padding: 0 20px;
+    }
+    &__info {
+      height: auto;
+      padding: 0 20px;
+    }
+    &__info-list {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__info-list--item {
+      padding: 14px;
+    }
+  }
+}
+// MEDIA MAX-WIDTH:400px
+@media (max-width: 400px) {
+  .footer {
+    padding: 30px 0;
+    &__nav {
+      padding: 0;
+    }
+    &__info-list--copy {
+      padding-right: 14px;
+    }
+  }
+}
+// MEDIA MAX-WIDTH:350px
+@media (max-width: 350px) {
+  .footer__info {
+    padding: 0;
+  }
+}
+
+// MENU
+.menu {
+  height: 100%;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+  }
+  &__list-item--link {
+    color: $color-white;
+    transition: 0.2s ease;
+    &:hover {
+      color: $color-black;
+    }
+  }
+}
+// MEDIA MAX-WIDTH:900px
+@media (max-width: 900px) {
+  .menu {
+    &__list {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding: 20px 0;
+    }
+    &__list-item {
+      padding: 10px;
+    }
+  }
+}
+
+// SOCIAL
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item:nth-child(2) {
+    margin: 0 40px;
+  }
+}
+// MEDIA MAX-WIDTH:900px
+@media (max-width: 900px) {
+  .social__item:nth-child(2) {
+    margin: 0 20px;
+  }
+}

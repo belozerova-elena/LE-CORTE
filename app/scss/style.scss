@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'components/normalize';
+@import 'components/header';
+@import 'components/main-screen';
+@import 'components/wine';
+@import 'components/history';
+@import 'components/feedback';
+@import 'components/footer';
+
+body {
+  font-family: $font-montserrat;
+  color: $color-white;
+  background-color: $color-dark;
+}
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}

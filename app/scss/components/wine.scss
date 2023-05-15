@@ -1,0 +1,66 @@
+.wine {
+  max-width: 1140px;
+  margin: 0px auto;
+  padding: 100px 15px;
+  text-align: center;
+  &__wrapper {
+    padding: 70px 10px 10px 10px;
+    border: 3px solid $color-border;
+  }
+  &__wrapper-title {
+    margin: 0px;
+    font-family: $font-playfair;
+    font-size: 36px;
+    font-weight: 700;
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 160px;
+      margin: 40px auto;
+      background-color: $color-white;
+    }
+  }
+  &__wrapper-description {
+    max-width: 733px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__wrapper-image {
+    margin: 50px 0px;
+  }
+}
+// MEDIA MAX-WIDTH:500px
+@media (max-width: 500px) {
+  .wine {
+    padding: 60px 15px;
+    &__wrapper {
+      padding-top: 40px;
+    }
+    &__wrapper-title {
+      font-size: 30px;
+    }
+    &__wrapper-description {
+      font-size: 14px;
+    }
+    &__wrapper-image {
+      margin: 40px 0px;
+    }
+  }
+}
+// MEDIA MAX-WIDTH:350px
+@media (max-width: 350px) {
+  .wine {
+    &__wrapper {
+      padding: 0px;
+      border: none;
+    }
+    &__wrapper-title {
+      font-size: 26px;
+    }
+    &__wrapper-image {
+      margin: 40px 0px 0px 0px;
+    }
+  }
+}
